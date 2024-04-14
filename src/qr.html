@@ -13,16 +13,26 @@
     <main
         class="h-screen bg-hero-bg bg-[center_right_-14rem] md:bg-[center_right_5rem] bg-no-repeat transition-all ease-in-out">
         <div class="flex flex-col h-screen items-center justify-center mx-10">
-            <img class="fixed top-10 left-10" width="120" src="./assets/logo-qr-generator.svg" alt="logo">
-            <div class="size-72 bg-1E2C51 rounded-full">
-                <!-- imagen qr generada -->
+            <a href="/src/index.html">
+                <img class="fixed top-10 left-10" width="120" src="./assets/logo-qr-generator.svg" alt="logo">
+            </a>
+            <div class="size-72 bg-1E2C51 rounded-full flex justify-center items-center">
+                <div class="bg-F2F5F9 p-8 rounded-3xl size-4/5" id="qrcode"></div>
             </div>
             <div class="flex mt-16 gap-8">
-                <button class="flex items-center bg-3662E3 hover:bg-4D78ED gap-2 py-4 px-10 rounded-xl text-F2F5F9" type="button">Download <img class="size-4" src="./assets/download.svg" alt="download"></button>
-                <button class="flex items-center bg-3662E3 hover:bg-4D78ED gap-2 py-4 px-10 rounded-xl text-F2F5F9" type="button">Share <img class="size-4" src="./assets/link.svg" alt="link"></button>
+                <button
+                    class="download flex items-center bg-3662E3 hover:bg-4D78ED gap-2 py-4 px-10 rounded-xl text-F2F5F9"
+                    type="button">Download <img class="size-4" src="./assets/download.svg" alt="download"></button>
+                <button
+                    class="share flex items-center bg-3662E3 hover:bg-4D78ED gap-2 py-4 px-10 rounded-xl text-F2F5F9"
+                    type="button">Share <img class="size-4" src="./assets/link.svg" alt="link"></button>
             </div>
         </div>
     </main>
 </body>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="/src/js/qrCode.js"></script>
 
 </html>
