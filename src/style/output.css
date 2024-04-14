@@ -550,6 +550,9 @@ video {
 .top-10{
   top: 2.5rem;
 }
+.m-10{
+  margin: 2.5rem;
+}
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -612,8 +615,11 @@ video {
 .self-end{
   align-self: flex-end;
 }
-.overflow-hidden{
-  overflow: hidden;
+.overflow-auto{
+  overflow: auto;
+}
+.overflow-y-auto{
+  overflow-y: auto;
 }
 .rounded-2xl{
   border-radius: 1rem;
@@ -676,6 +682,14 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-11{
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .font-outfit{
   font-family: "Outfit", sans-serif;
