@@ -8,7 +8,7 @@ btnQR.addEventListener("click", function () {
     if (!notUrl) {
       container.insertAdjacentHTML(
         "afterend",
-        '<p class="notUrl text-F2F5F9">*This URL is required</p>'
+        '<p class="notUrl text-xs mt-2 text-F2F5F9">*This URL is required</p>'
       );
     }
   } else {
