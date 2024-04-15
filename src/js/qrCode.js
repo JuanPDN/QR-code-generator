@@ -31,7 +31,7 @@ const copyQR = () => {
   const share = btnShare.innerHTML;
   btnShare.textContent = "Copied!";
 
-  setInterval(() => {
+  setTimeout(() => {
     btnShare.innerHTML = share;
   }, 600);
 };
