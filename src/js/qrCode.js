@@ -5,7 +5,7 @@ const url = sessionStorage.getItem("url");
 
 var qrcode = new QRCode(QR);
 
-if (!url.length == 0) {
+if (url && !url.length == 0) {
   qrcode.makeCode(url);
 } else {
   qrcode.clear();
@@ -27,6 +27,13 @@ const downloadQR = () => {
 const copyQR = () => {
   const imageURL = document.querySelector("#qrcode img").src;
   navigator.clipboard.writeText(imageURL);
+
+  const share = btnShare.innerHTML;
+  btnShare.textContent = "Copied!";
+
+  setInterval(() => {
+    btnShare.innerHTML = share;
+  }, 600);
 };
 
 btnDownload.addEventListener("click", downloadQR);
