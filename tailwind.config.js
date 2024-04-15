@@ -19,7 +19,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-bg": 'url("/src/assets/bg-illustration.svg")',
+        "hero-bg": 'url("../assets/bg-illustration.svg")',
       },
     },
   },
