@@ -37,6 +37,7 @@ const copyQR = () => {
     })
     .catch((error) => {
       alert("Failed to copy");
+      console.log(error);
     });
 };
 
