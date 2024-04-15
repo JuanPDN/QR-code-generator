@@ -26,14 +26,18 @@ const downloadQR = () => {
 
 const copyQR = () => {
   const imageURL = document.querySelector("#qrcode img").src;
-  navigator.clipboard.writeText(imageURL);
-
   const share = btnShare.innerHTML;
-  btnShare.textContent = "Copied!";
-
-  setTimeout(() => {
-    btnShare.innerHTML = share;
-  }, 600);
+  navigator.clipboard
+    .writeText(imageURL)
+    .then(() => {
+      btnShare.textContent = "Copied!";
+      setTimeout(() => {
+        btnShare.innerHTML = share;
+      }, 600);
+    })
+    .catch((error) => {
+      alert("Failed to copy");
+    });
 };
 
 btnDownload.addEventListener("click", downloadQR);
